@@ -40,8 +40,8 @@ def cdr3_occ_multi_clone(f):
 	list = {}
 	for k,v in d.items():
 		if len(v) > 1:
-			list.update({k : v})
-	return list.keys()
+			list.update({k : len(v)})
+	return list
 
 #clone_highest_total_cnt(f)
 #clones_mostoccin_samples(f)
